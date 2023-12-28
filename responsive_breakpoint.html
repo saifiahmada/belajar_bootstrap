@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Breakpoint Classes Example</title>
+    <!-- Link CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Bootstrap Responsive Breakpoint Classes Example</h1>
+
+        <!-- Visible on Extra Small Screens (d-block) -->
+        <div class="d-block d-sm-none">
+            <div class="alert alert-primary" role="alert">
+                Visible on Extra Small Screens
+            </div>
+        </div>
+
+        <!-- Hidden on Small Screens and Visible on Medium Screens (d-none d-md-block) -->
+        <div class="d-none d-md-block">
+            <div class="alert alert-success" role="alert">
+                Hidden on Small Screens and Visible on Medium Screens
+            </div>
+        </div>
+
+        <!-- Visible on Large Screens (d-lg-block) -->
+        <div class="d-none d-lg-block">
+            <div class="alert alert-warning" role="alert">
+                Visible on Large Screens
+            </div>
+        </div>
+
+        <!-- Hidden on Extra Large Screens (d-xl-none) -->
+        <div class="d-xl-none">
+            <div class="alert alert-danger" role="alert">
+                Hidden on Extra Large Screens
+            </div>
+        </div>
+    </div>
+
+    <!-- Link JavaScript Bootstrap (Placed at the end of the HTML file for better performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

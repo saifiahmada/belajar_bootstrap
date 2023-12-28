@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Visibility Classes Example</title>
+    <!-- Link CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Bootstrap Visibility Classes Example</h1>
+
+        <!-- Visible Element -->
+        <div class="visible">
+            <div class="alert alert-success" role="alert">
+                This is a visible element.
+            </div>
+        </div>
+
+        <!-- Invisible Element -->
+        <div class="invisible">
+            <div class="alert alert-danger" role="alert">
+                This is an invisible element.
+            </div>
+        </div>
+
+        <!-- Toggle Visibility with JavaScript -->
+        <button onclick="toggleVisibility()" class="btn btn-primary mt-3">Toggle Visibility</button>
+
+        <!-- Element to Toggle -->
+        <div id="toggleElement" class="visible mt-3">
+            <div class="alert alert-warning" role="alert">
+                This element can be toggled.
+            </div>
+        </div>
+    </div>
+
+    <!-- Link JavaScript Bootstrap (Placed at the end of the HTML file for better performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for Toggle Visibility -->
+    <script>
+        function toggleVisibility() {
+            var element = document.getElementById("toggleElement");
+            if (element.classList.contains("visible")) {
+                element.classList.remove("visible");
+                element.classList.add("invisible");
+            } else {
+                element.classList.remove("invisible");
+                element.classList.add("visible");
+            }
+        }
+    </script>
+</body>
+
+</html>
